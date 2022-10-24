@@ -5,9 +5,7 @@ import java.util.*;
 public class TestSched {
 
 
-    public static void readTasks(String filename,
-                          ArrayList<Task> task1, ArrayList<Task> task2,
-                                 ArrayList<Task> task3) {
+    public static void readTasks(String filename, ArrayList<Task> task1, ArrayList<Task> task2, ArrayList<Task> task3) {
         // Create lists where base type is different
 
     }
