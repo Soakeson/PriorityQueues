@@ -1,5 +1,3 @@
-import javax.xml.transform.Templates;
-
 public class LeftistHeap<E extends Comparable> {
     private Node<E> root;
 
