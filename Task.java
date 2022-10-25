@@ -10,7 +10,6 @@ public class Task implements Comparable<Task> {
         this.duration = 0;
     }
 
-
     public Task(int ID, int start, int deadline, int duration) {
         this.ID = ID;
         this.start = start;
@@ -26,11 +25,11 @@ public class Task implements Comparable<Task> {
         return "Task " + ID + "[" + start + "-" + deadline + "] " + duration;
     }
 
-
+    // Comparing two different objects that implement Task priortize deadline.
     public int compareTo(Task t2) {
-        System.out.println("NO compareTo");
-        // Supply your own comparator method
-        return 0;
+        if (deadline < t2.deadline) return -1;
+        if (deadline > t2.deadline) return 1;
+        else return 0;
     }
 
 }

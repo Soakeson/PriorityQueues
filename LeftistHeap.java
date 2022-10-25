@@ -117,6 +117,8 @@ public class LeftistHeap<E extends Comparable> {
         heap.insert(9);
         heap.insert(20);
         heap.insert(4);
+        System.out.println(heap.getMin());
+        System.out.println(heap.getMin());
         System.out.println(heap.deleteMin());
         System.out.println(heap.deleteMin());
         System.out.println(heap.deleteMin());

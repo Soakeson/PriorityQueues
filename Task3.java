@@ -3,10 +3,10 @@ public class Task3 extends Task {
         super(ID, start, deadline, duration);
     }
 
-    // Figure out new priority.
+    // Figure out priority for this one.
     @Override
     public int compareTo(Task t2) {
-        //System.out.println("Using Task1 compareTo");
+        //System.out.println("Using Task3 compareTo");
         return deadline-t2.deadline;
      }
 }

@@ -7,6 +7,8 @@ public class Task2 extends Task {
     @Override
     public int compareTo(Task t2) {
         //System.out.println("Using Task2 compareTo");
-        return start - t2.start;
+        if (start < t2.start) return -1;
+        if (start > t2.start) return 1;
+        else return 0;
      }
 }
