@@ -18,7 +18,7 @@ public class Task implements Comparable<Task> {
     }
 
     public String toString() {
-        return "Task " + ID;
+        return "Task " + ID + "[" + start + ", " + deadline + ", " + duration + "]";
     }
 
     public String toStringL() {

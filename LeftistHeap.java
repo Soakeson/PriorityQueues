@@ -10,6 +10,7 @@ public class LeftistHeap<E extends Comparable> {
      * @return the root value without taking it out of the heap
      */
     public E getMin() {
+        if (root == null) return null;
         return root.value;
     }
 
@@ -18,6 +19,7 @@ public class LeftistHeap<E extends Comparable> {
      * @return the min value and take it off the heap.
      */
     public E deleteMin() {
+        if (root == null) return null;
         E min = root.value;
         root = merge(root.left, root.right);
         return min;
@@ -29,6 +31,11 @@ public class LeftistHeap<E extends Comparable> {
      */
     public void insert(E value) {
         root = merge(root, new Node(value));
+    }
+
+    public boolean isEmpty() {
+        if (root == null) return true;
+        return false;
     }
 
     /**
