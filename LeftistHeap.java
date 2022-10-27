@@ -103,13 +103,6 @@ public class LeftistHeap<E extends Comparable> {
             this.npl = 0;
         }
 
-        Node(E value, Node<E> left, Node<E> right) {
-            this.value = value;
-            this.left = left;
-            this.right = right;
-            this.npl = 0;
-        }
-
         public int compareTo(Node<E> other) {
             return this.value.compareTo(other.value);
         }

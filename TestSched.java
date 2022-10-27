@@ -27,8 +27,7 @@ public class TestSched {
 
     public static void main(String args[]) {
         Scheduler s = new Scheduler();
-        // String[] files = {"taskset1.txt", "taskset2.txt", "taskset3.txt", "taskset4.txt", "taskset5.txt"};
-        String[] files = {"taskset1.txt"};
+        String[] files = {"taskset1.txt", "taskset2.txt", "taskset3.txt", "taskset4.txt", "taskset5.txt"};
         for (String f : files) {
             ArrayList<Task> t1 = new ArrayList();    // elements are Task1
             ArrayList<Task> t2 = new ArrayList();    // elements are Task2
